@@ -1,0 +1,68 @@
+﻿@model MessagingApp.Models.ClassListViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class List - MessagingApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="class-list-container">
+        <h2 class="class-title">@Model.Course.Name</h2>
+
+        <table class="class-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Instructor Row -->
+                <tr>
+                    <td>
+                        <a asp-action="Index"
+                           asp-controller="Messaging"
+                           asp-route-studentId="@Model.Instructor.UserId"
+                           asp-route-studentName="@Model.Instructor.Name"
+                           class="message-btn">
+                            @Model.Instructor.Name
+                        </a>
+                    </td>
+                    <td>@Model.Instructor.Email</td>
+                    <td>Instructor</td>
+
+                </tr>
+
+
+
+                <!-- Student Rows -->
+                @foreach (var student in Model.Students)
+                {
+                    <tr>
+                        <td>
+                            <a asp-action="Index"
+                               asp-controller="Messaging"
+                               asp-route-studentId="@student.UserId"
+                               asp-route-studentName="@student.Name"
+                               class="message-btn">
+                                @student.Name
+                            </a>
+                        </td>
+                        <td>@student.Email</td>
+                        <td>Student</td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
