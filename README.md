@@ -6,6 +6,10 @@
 
 This project aims to enhance the Brightspace learning platform by integrating a messaging feature that allows students and instructors to communicate seamlessly within the system. The goal is to improve collaboration, streamline discussions, and provide a more interactive learning experience without relying on external messaging tools. By enabling direct messaging within Brightspace, students can easily reach out to instructors for guidance, discuss assignments with classmates, and stay engaged in their courses more effectively.
 
+## **Reason of license choice**
+
+The MIT License was chosen for this project because it provides maximum flexibility for users and contributors. Since the goal is to enhance the Brightspace experience, the MIT License ensures that educators, students, and developers can freely use, modify, and integrate this feature without restrictions. This encourages adoption, collaboration, and potential improvements by the community while maintaining proper attribution to the original work. The permissive nature of the license also allows institutions to integrate the messaging functionality into their own Brightspace environments without legal complications.
+
 ## **Setup Instructions**
 
 ### Prerequisites
