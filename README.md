@@ -2,6 +2,10 @@
 
 ---
 
+## **Purpose of project**
+
+This project aims to enhance the Brightspace learning platform by integrating a messaging feature that allows students and instructors to communicate seamlessly within the system. The goal is to improve collaboration, streamline discussions, and provide a more interactive learning experience without relying on external messaging tools. By enabling direct messaging within Brightspace, students can easily reach out to instructors for guidance, discuss assignments with classmates, and stay engaged in their courses more effectively.
+
 ## **Setup Instructions**
 
 ### Prerequisites
